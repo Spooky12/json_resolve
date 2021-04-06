@@ -1,7 +1,6 @@
-name: json_resolve
+name: json_resolver
 description: Easy resolving deep json using keypath
 version: 2.0.0
-author: SpooKy12
 homepage: https://github.com/Spooky12/json_resolve
 
 environment:

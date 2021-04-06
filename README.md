@@ -1,12 +1,12 @@
-# json resolve
+# json resolver
 
-- Available at <https://pub.dartlang.org/packages/json_resolve>
+- Available at <https://pub.dev/packages/json_resolver>
 - Based on [json_resolve by Khoa Pham](https://github.com/onmyway133/json_resolve)
 - [How to resolve deep json object in Dart](https://dev.to/onmyway133/how-to-resolve-deep-json-object-in-dart-5c5l)
 
 ## Description
 
-json_resolve is a Dart library that helps accessing property in deep json object easily using keypath.
+json_resolver is a Dart library that helps accessing property in deep json object easily using keypath.
 
 Given the following deeply nested json:
 
@@ -15,37 +15,22 @@ Given the following deeply nested json:
     "movie": "isFun",
     "earth": 199999,
     "dc": [
-      {
-        "name": "Superman"
-      },
-      {
-        "name": "Flash"
-      },
-      {
-        "name": "Wonder Woman"
-      }
+      {"name": "Superman"},
+      {"name": "Flash"},
+      {"name": "Wonder Woman"}
     ],
     "marvel": [
       {
         "name": "Thor",
         "weapon": "Mjolnir",
         "appear": [
-          {
-            "year": 2011,
-            "title": "Thor"
-          },
-          {
-            "year": 2013,
-            "title": "The Dark World"
-          },
-          {
-            "year": 2017,
-            "title": "Ragnarok"
-          }
+          {"year": 2011, "title": "Thor"},
+          {"year": 2013, "title": "The Dark World"},
+          {"year": 2017, "title": "Ragnarok"}
         ]
       }
     ]
-}
+  }
 ```
 
 We can access using keypath. The library ensures safe type checking and casting. You can provide default value to ensure that return value is not null (if you provide default value you may use bang operator `!` to to cast the return to a non null value).
@@ -79,9 +64,9 @@ First of all add the following dependencies to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  json_resolve: ^2.0.0
+  json_resolver: ^2.0.0
 ```
 
 ## License
 
-**json_resolve** is available under the MIT license. See the [LICENSE](https://github.com/Spooky12/json_resolve/blob/master/LICENSE) file for more info.
+**json_resolver** is available under the MIT license. See the [LICENSE](https://github.com/Spooky12/json_resolve/blob/master/LICENSE) file for more info.

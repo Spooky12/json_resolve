@@ -1,11 +1,11 @@
 //
-// json_resolve
+// json_resolver
 // Created by Khoa Pham
 // Updated by SpooKy12
 //
 
+import 'package:json_resolver/json_resolver.dart';
 import 'package:test/test.dart';
-import 'package:json_resolve/json_resolve.dart';
 
 void main() {
   const json = {

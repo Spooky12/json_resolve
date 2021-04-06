@@ -1,5 +1,5 @@
 //
-// json_resolve
+// json_resolver
 // Created by Khoa Pham
 // Updated by SpooKy12
 //
