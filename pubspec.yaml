@@ -1,11 +1,12 @@
 name: json_resolve
 description: Easy resolving deep json using keypath
-version: 1.0.0
-author: Khoa Pham <onmyway133@gmail.com>
-homepage: https://github.com/onmyway133/json_resolve
+version: 2.0.0
+author: SpooKy12
+homepage: https://github.com/Spooky12/json_resolve
 
 environment:
     sdk: '>=2.12.0 <3.0.0'
 
 dev_dependencies:
   test: ^1.16.8
+  pedantic: ^1.11.0

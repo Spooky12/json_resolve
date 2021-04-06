@@ -9,8 +9,19 @@
 ///
 /// If [defaultValue] is provided, it will return it if [path]
 /// doesn't exist in [json] or an error is raised.
-/// With a [defaultValue] set to non-null value, you can use the
+/// With a [defaultValue] set to non-null value, you may use the
 /// bang operator (!) to cast the return value back to [T].
+///
+/// Example:
+/// ```dart
+/// final String? prop = resolve<String>(json: json, path: 'movie');
+/// ```
+///
+/// Example with default value:
+/// ```dart
+/// final String? prop =
+///     resolve<String>(json: json, path: 'movie', defaultValue: 'error')!;
+/// ```
 T? resolve<T>({
   required Map<String, dynamic>? json,
   required String path,
